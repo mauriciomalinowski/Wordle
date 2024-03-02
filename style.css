@@ -1,111 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+body {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
 
-#contenedor{
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto;
     text-align: center;
-    font-family: "Bebas Neue", sans-serif;
-    background: rgb(255, 255, 255);
-    top: 50%;
-    overflow: hidden;
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    width: 900px;
-    height: 400px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-h1{
-    color: rgb(60, 152, 150); 
-    font-size:34px;
-    letter-spacing: 5px;
-}
-
-#contenido{
-
-    width: 45%;
-    height: 100%;
-    float: left;
-    
-}
-
-#detalle{
-    text-align: center; 
-    background: aquamarine;
-    width: 55%;
-    height: 100%;
-    float: left;
-    letter-spacing: 1px;
-}
-
-h3{
-    font-family: "Smooch Sans", sans-serif;
-    font-size: 12px;
-    color: rgb(166, 164, 164);
-    letter-spacing: 2px;    
-}
-
-input{
-    font-size: 15px;
-    letter-spacing: 2px;
-    width: 65%;
-    padding: 15px 20px;
-    border: none;
-    background-color: #eee;
-    border-radius: 5px;
-    
-}
-
-h2{
-    letter-spacing: 10px;
-    color: rgb(255, 255, 255);
-    font-size: 40px;
+h1 {
     text-align: center;
-
-}
-
-p{
-    font-size: 25px;
-    color: rgb(81, 199, 238); 
-    
-}
-
-button{
-    font-size: 15px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    background-color: rgb(79, 244, 211);
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    border: solid rgb(120, 193, 224);
-    text-transform: uppercase;
-    transition: transform 20ms ease-in;
-} 
-
-button:active {
-	transform: scale(0.85);
-}
-#error{
-    letter-spacing: 1px;
-    display: none;
-    font-size: 15px;
-    color: red; 
-
-}
-#resultado_flu,
-#resultado_man {
-    margin-top: 5px;
-    padding: 10px;
-    background-color: #f3f3f3;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-#resultado_flu::before,
-#resultado_man::before {
-    content: attr(id);
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
     color: #333;
 }
+
+#game-container {
+    text-align: center;
+}
+
+#word-display {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#guess-input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#guess-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#guess-button:hover {
+    background-color: #45a049;
+}
+
+#feedback {
+    margin-top: 20px;
+}
+
+#attempts {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.green {
+    color: #79b851;
+}
+
+.yellow {
+    color: #f3c237;
+}
+
+.grey {
+    color: #a4aec4;
+}
+
+.row {
+    margin-bottom: 10px;
+}
+
+.letter {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+#feedback {
+    color: red;
+    font-weight: bold;
+}
+

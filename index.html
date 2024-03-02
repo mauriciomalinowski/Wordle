@@ -1,41 +1,23 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>Calculadora de hidratacion</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordleppy</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div id="contenedor">
-        <div id='contenido'>
-            <h1> Hidratacion Basal</h1>
-            <h3>Completar los datos del paciente</h3>
-            <input id="paso" type="number" placeholder="Ingrese el peso en kg" />
-            <br>
-            <div id="error">Por favor complete correctamente los datos del paciente</div>
-            <br>
-            <button class="item" id="calcular">Calcular</button>
-            <br>
-            <br>
-            <div id="resultado_flu"></div>
-            <div id="resultado_man"></div>
+    <div class="container">
+        <h1>Wordleppy</h1>
+        <div id="game-container">
+            <div id="word-display"></div>
+            <input type="text" id="guess-input" maxlength="5" placeholder="Ingresa tu adivinanza">
+            <button id="guess-button">INTENTAR</button>
+            <div id="feedback"></div>
+            <div id="attempts">Intentos restantes: 6</div>
         </div>
-    
-        <div id="detalle">
-            <br><br><br>
-            <h2>CALCULADORA</h2>
-            <ul>
-                <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
-                <br>
-                <li>Por arriba de 10kg, 20kg, se suma 50cc por cada kg</li>
-                <br>
-                <li>De 20kg para arriba, se suman 20cc por cada kilo adicional</li>
-            </ul>
-        </div>
+        <div id="grid"></div>
     </div>
-    
+    <script src="script.js"></script>
 </body>
-
 </html>
